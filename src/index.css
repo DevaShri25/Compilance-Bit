@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #2D241E;
+    background-color: #F8F5F0;
+  }
+  
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Subtle warm glassmorphism classes */
+.glass-panel {
+  background: rgba(255, 253, 249, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 217, 203, 0.8);
+  box-shadow: 0 4px 20px -2px rgba(80, 58, 38, 0.04), 0 2px 6px -1px rgba(80, 58, 38, 0.02);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid #E8E2D7;
+  box-shadow: 0 1px 3px 0 rgba(70, 50, 30, 0.04);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #DCD4C7;
+  transition: all 0.15s ease-in-out;
+}
+
+.glass-input:focus {
+  outline: none;
+  border-color: #8C5832;
+  box-shadow: 0 0 0 3px rgba(140, 88, 50, 0.12);
+}
+
+/* Custom scrollbar for clean enterprise look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F3EFE9;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5C9B8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B6A794;
+}

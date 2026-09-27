@@ -1,0 +1,6 @@
+{
+  "name": "GovTender AI — Bid Verification System",
+  "description": "Government tender bid verification system with AI document extraction, compliance validation, and bidder qualification intelligence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
